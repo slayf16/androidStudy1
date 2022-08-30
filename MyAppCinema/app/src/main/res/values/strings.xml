@@ -2,5 +2,8 @@
     <string name="app_name">Cinema</string>
     <string name="home">home</string>
     <string name="back">back</string>
+    <string name="Cinema">Cinema</string>
+    <string name="Serial">Serial</string>
+
 
 </resources>
