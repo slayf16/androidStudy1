@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Movies">
+        <menu>
+            <item
+                android:id="@+id/StarWars"
+                android:title="@string/StarWars"/>
+            <item
+                android:id="@+id/Ted"
+                android:title="@string/Ted"/>
+            <item
+                android:id="@+id/Millers"
+                android:title="@string/Millers"/>
+            <item
+                android:id="@+id/Avengers"
+                android:title="@string/Avengers"/>
+        </menu>
+    </item>
+    <item
+        android:title="Series">
+        <menu>
+            <item
+                android:id="@+id/Supernatural"
+                android:title="@string/Supernatural"/>
+            <item
+                android:id="@+id/GameOfThrone"
+                android:title="@string/GameOfThrone"/>
+            <item
+                android:id="@+id/WhiteCollars"
+                android:title="@string/WhiteCollars"/>
+            <item
+                android:id="@+id/Chernobyl"
+                android:title="@string/Chernobyl"/>
+        </menu>
+    </item>
+
+</menu>

@@ -4,6 +4,16 @@
     <string name="back">back</string>
     <string name="Cinema">Cinema</string>
     <string name="Serial">Serial</string>
+    <string name="StarWars">Звездные войны</string>
+    <string name="Ted">Третий лишний</string>
+    <string name="Millers">Мы миллеры</string>
+    <string name="Avengers">Мстители</string>
+    <string name="Supernatural">Сверхъестественное</string>
+    <string name="GameOfThrone">Игра престолов</string>
+    <string name="WhiteCollars">Белый воротничок</string>
+    <string name="Chernobyl">Чернобыль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
