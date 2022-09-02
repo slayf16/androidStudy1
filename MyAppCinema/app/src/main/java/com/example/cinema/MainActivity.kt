@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding?.root)
         supportFragmentManager.beginTransaction().replace(R.id.content, nameApplication()).commit()
+
+        setSupportActionBar(binding?.topAppBar)
+
+      /*  binding?.topAppBar?.setOnMenuItemClickListener { menuItem -> onOptionsItemSelected(menuItem)}*/
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -26,6 +30,7 @@ class MainActivity : AppCompatActivity() {
                 )
             }
         }
-        return super.onOptionsItemSelected(item)
+        return true
+
     }
 }
