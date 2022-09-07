@@ -22,7 +22,7 @@ class MainMenu : BottomSheetDialogFragment() {
                 R.id.Avengers -> {
                     val startHome = Intent(context, contentActivity::class.java)
                     startHome.putExtra("key", 0)
-                    startActivity(startHome)//, activityOptionsCompat.toBundle())
+                    startActivity(startHome)
 
                 }
                 R.id.Millers -> {

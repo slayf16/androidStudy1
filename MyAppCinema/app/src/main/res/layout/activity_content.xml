@@ -1,20 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".contentActivity">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imageContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="336dp"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:srcCompat="@drawable/avengers"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeWidth="1dp"
+        app:strokeColor="@android:color/white"
+        app:cardElevation="0dp"
+        android:focusable="true"
+        android:checkable="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentCoordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <Button
+                android:id="@+id/buttonMovie"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/info_button"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/nameMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="10dp"
+                android:text="@string/Avengers"
+                android:background="@color/black"
+                android:textColor="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/producerMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:padding="10dp"
+                android:text="@string/producer"
+                android:background="@color/black"
+                android:textColor="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/longMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="10dp"
+                android:text="@string/longMovies"
+                android:background="@color/black"
+                android:textColor="@color/white"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@drawable/avengers">
+
+        </androidx.appcompat.widget.AppCompatImageView>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

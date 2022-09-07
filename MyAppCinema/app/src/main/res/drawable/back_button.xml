@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/info_button">
+
+        </bitmap>
+   <!--     <shape android:shape="oval">
+            <solid android:color="#FCD366" />
+        </shape>-->
+    </item>
+
+</selector>
