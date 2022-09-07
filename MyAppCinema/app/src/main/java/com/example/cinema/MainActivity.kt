@@ -3,9 +3,10 @@ package com.example.cinema
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import com.example.cinema.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private var binding: ActivityMainBinding? = null
 
@@ -17,7 +18,14 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding?.topAppBar)
 
-      /*  binding?.topAppBar?.setOnMenuItemClickListener { menuItem -> onOptionsItemSelected(menuItem)}*/
+        binding?.bottomNavigation?.setOnItemSelectedListener { item ->
+            when(item.itemId){
+                R.id.homeButton -> supportFragmentManager.beginTransaction().replace(R.id.content, nameApplication()).commit()
+                R.id.backIcon -> supportFragmentManager.beginTransaction().replace(R.id.content, nameApplication()).commit()
+            }
+            return@setOnItemSelectedListener true
+        }
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -31,6 +39,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return true
+
+    }
+
+    override fun onClick(view: View) {
+
 
     }
 }
