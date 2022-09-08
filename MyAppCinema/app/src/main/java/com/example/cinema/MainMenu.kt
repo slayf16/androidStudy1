@@ -16,37 +16,37 @@ class MainMenu : BottomSheetDialogFragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val startActivity = Intent(context, contentActivity::class.java)
         binding = MainMenuBinding.inflate(inflater,container,false)
         binding?.menuDialog?.setNavigationItemSelectedListener { menuItem ->
+
             when(menuItem.itemId){
                 R.id.Avengers -> {
-                    val startHome = Intent(context, contentActivity::class.java)
-                    startHome.putExtra("key", 0)
-                    startActivity(startHome)
-
+                    startActivity.putExtra("key", 0)
                 }
                 R.id.Millers -> {
-
+                    startActivity.putExtra("key", 1)
                 }
                 R.id.StarWars -> {
-
+                    startActivity.putExtra("key", 2)
                 }
                 R.id.Ted -> {
-
+                    startActivity.putExtra("key", 3)
                 }
                 R.id.Supernatural -> {
-
+                    startActivity.putExtra("key", 4)
                 }
                 R.id.WhiteCollars -> {
-
+                    startActivity.putExtra("key", 5)
                 }
                 R.id.GameOfThrone -> {
-
+                    startActivity.putExtra("key", 6)
                 }
                 R.id.Chernobyl -> {
-
+                    startActivity.putExtra("key", 7)
                 }
             }
+            startActivity(startActivity)
             true
         }
         return binding?.root

@@ -20,7 +20,10 @@ class contentFragmentActvity : BottomSheetDialogFragment(),View.OnClickListener 
     }
 
     override fun onClick(p0: View?) {
-        TODO("Not yet implemented")
+        when(view?.id) {
+            R.id.closePanel -> dismiss()
+        }
+
     }
 
 }

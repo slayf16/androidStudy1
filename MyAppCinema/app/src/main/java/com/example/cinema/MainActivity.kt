@@ -6,7 +6,7 @@ import android.view.MenuItem
 import android.view.View
 import com.example.cinema.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity(), View.OnClickListener{
 
     private var binding: ActivityMainBinding? = null
 
@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             android.R.id.home ->{
@@ -39,9 +38,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
         return true
-
     }
-
     override fun onClick(view: View) {
 
 
